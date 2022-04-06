@@ -1,0 +1,17 @@
+from distutils.command import config
+from distutils.debug import DEBUG
+
+
+class DevelopmentConfig():
+    DEBUG = True
+    MySQL_HOST = 'localhost:8080'
+    MySQL_USER = 'usuario0'
+    MySQL_PASSWORD = '12345'
+    MySQL_DB = 'taller1'
+
+
+
+config = {
+     'development': DevelopmentConfig
+
+}
